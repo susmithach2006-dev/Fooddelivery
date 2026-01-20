@@ -505,6 +505,7 @@ function findBestMeal() {
     else { 
         let best = affordable.reduce((prev, curr) => (prev.price > curr.price) ? prev : curr);
         res.innerHTML = `⭐ Try <b>${best.name}</b> (₹${best.price})`;
+        
     }
 }
 </script>
